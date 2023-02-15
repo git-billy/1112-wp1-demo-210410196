@@ -1,0 +1,5 @@
+id,title,price,img,amount
+1,Samsung Galaxy S7,599.99,https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/cart-96/galaxy-s7.png,1
+2,google pixel ,499.99,https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/cart-96/google-pixel.png,1
+3,Xiaomi Redmi Note 2,699.99,https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/cart-96/redmi-notes.png,1
+4,Samsung Galaxy S8,399.99,https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/cart-96/galaxy-s8.png,1
