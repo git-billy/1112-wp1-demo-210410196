@@ -10,4 +10,8 @@ const pool = new Pool({
 
 console.log("connect database", pool.options.database);
 
+pool.query("SELECT * FROM cart_96", [], (error, results) => {
+  console.log(results.rows);
+});
+
 module.exports = pool;
