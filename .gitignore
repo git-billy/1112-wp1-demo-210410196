@@ -4,6 +4,7 @@
 
 # dependencies
 node_modules
+card_demo_96/node_modules
 /.pnp
 .pnp.js
 
