@@ -2,13 +2,26 @@ const { Pool } = require("pg");
 
 const PORT = 6543;
 
-const pool = new Pool({
-  user: "postgres",
-  host: "db.hzllwkixijuoqbropnat.supabase.co",
-  port: PORT,
-  database: "postgres",
-  password: "9E2xRMpOGgFCMlv2",
-});
+
+let pool;
+require("dotenv").config();
+if (process.env.NODE_ENV === "SUPABASE") {
+  pool = new Pool({
+    user: "postgres",
+    host: process.env.SUPABASE_HOST,
+    port: PORT,
+    database: "postgres",
+    password: process.env.SUPABASE_PASSWORD,
+  });
+} else {
+  pool = new Pool({
+    user: "postgres",
+    host: "localhost",
+    port: PORT,
+    database: "wp2_demo_xx",
+    password: "0000",
+  });
+}
 
 console.log(
   `Connect localhost PostgreSQL database ${pool.options.database} on port ${pool.options.port}`

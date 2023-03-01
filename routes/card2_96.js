@@ -8,7 +8,7 @@ router.get("/", async function (req, res, next) {
   let RESULTS;
 
   try {
-    RESULTS = await db.query("SELECT * FROM cart_96", []);
+    RESULTS = await db.query("SELECT * FROM card_96", []);
   } catch (error) {
     console.log(error);
   }
