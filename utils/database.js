@@ -11,7 +11,7 @@ const pool = new Pool({
 });
 
 console.log(
-  `Connect localhost PostgreSQL database ${pool.options.database} on port ${PORT}`
+  `Connect localhost PostgreSQL database ${pool.options.database} on port ${pool.options.port}`
 );
 
 // pool.query("SELECT * FROM cart_96", [], (error, results) => {
