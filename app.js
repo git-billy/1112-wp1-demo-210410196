@@ -13,6 +13,8 @@ var usersRouter = require("./routes/users");
 const cardRouter_96 = require("./routes/card_96");
 const card2Router_96 = require("./routes/card2_96");
 
+const card2ApiRouter_96 = require('./routes/api/apiCard2Router_96');
+
 var app = express();
 
 // view engine setup
@@ -30,6 +32,7 @@ app.use("/users", usersRouter);
 
 app.use("/card_96", cardRouter_96);
 app.use("/card2_96", card2Router_96);
+app.use("/api/card2_96", card2ApiRouter_96);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
