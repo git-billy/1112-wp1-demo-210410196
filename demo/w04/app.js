@@ -4,16 +4,16 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-const db = require("./utils/database");
+const db = require("../../utils/database");
 // const testDB = require("./utils/test-db");
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+var indexRouter = require("../../routes/index");
+var usersRouter = require("../../routes/users");
 
-const cardRouter_96 = require("./routes/card_96");
-const card2Router_96 = require("./routes/card2_96");
+const cardRouter_96 = require("../../routes/card_96");
+const card2Router_96 = require("../../routes/card2_96");
 
-const card2ApiRouter_96 = require('./routes/api/apiCard2Router_96');
+const card2ApiRouter_96 = require('../../routes/api/apiCard2Router_96');
 
 var app = express();
 
