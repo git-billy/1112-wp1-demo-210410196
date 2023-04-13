@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 
 import Wrapper from '../assets/wrapper/Blogs_xx'
 
-import { useDemoContext_xx } from '../context/DemoContext_96'
+import { useDemoContext_96 } from '../context/DemoContext_96'
 
 const BlogsSupabasePage_xx = () => {
   // const [name, setName] = useState('Hsingtai Chung');
@@ -18,7 +18,7 @@ const BlogsSupabasePage_xx = () => {
   // const [data, setData] = useState([]);
 //  console.log('blog data', data);
 
-  const { pName, pId, blogs } = useDemoContext_xx();
+  const { pName, pId, blogs } = useDemoContext_96();
 
   // const fetchBlogDataFromSupabase = async () => {
   //    try {

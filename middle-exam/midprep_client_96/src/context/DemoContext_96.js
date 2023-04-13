@@ -2,25 +2,27 @@ import React, { useContext, useReducer, useEffect } from 'react';
 
 import axios from 'axios';
 
-import DemoReducer_xx from './DemoReducer_xx';
+import DemoReducer_96 from './DemoReducer_96';
 
 // import { supabase } from '../db/clientSupabse';
 
-let api_url = `http://localhost:5000/api/midprep_xx/overview2_xx`;
+// let api_url = `http://localhost:5000/api/midprep_96/overview2_96`;
+
+let api_url = `http://localhost:5100/api/midprep_96/overview2_96`;
 
 const initialState = {
-  pName: 'Hsingtai Chung',
-  pId: '123456789',
+  pName: 'ChungChun Wang',
+  pId: '210410196',
   blogs: [],
   blogs2: [],
   data1: [],
   data2: [],
 };
 
-const DemoContext_xx = React.createContext();
+const DemoContext_96 = React.createContext();
 
 const DemoProvider_96 = ({ children }) => {
-  const [state, dispatch] = useReducer(DemoReducer_xx, initialState);
+  const [state, dispatch] = useReducer(DemoReducer_96, initialState);
 
   const fetchProductDataFromNodeServer = async () => {
     try {
@@ -38,7 +40,7 @@ const DemoProvider_96 = ({ children }) => {
 
   //   const fetchBlogDataFromSupabase = async () => {
   //     try {
-  //       let { data, error } = await supabase.from('card_xx').select('*');
+  //       let { data, error } = await supabase.from('card_96').select('*');
 
   //       console.log('data', data);
   //       dispatch({ type: 'GET_BLOGS_SUPABASE_SUCCESS', payload: data });
@@ -53,14 +55,14 @@ const DemoProvider_96 = ({ children }) => {
   //   }, []);
 
   return (
-    <DemoContext_xx.Provider value={{ ...state }}>
+    <DemoContext_96.Provider value={{ ...state }}>
       {children}
-    </DemoContext_xx.Provider>
+    </DemoContext_96.Provider>
   );
 };
 
-const useDemoContext_xx = () => {
-  return useContext(DemoContext_xx);
+const useDemoContext_96 = () => {
+  return useContext(DemoContext_96);
 };
 
-export { DemoProvider_96, useDemoContext_xx };
+export { DemoProvider_96, useDemoContext_96 };

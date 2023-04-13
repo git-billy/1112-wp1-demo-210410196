@@ -35,7 +35,7 @@ const NavbarResp_xx = () => {
                       <Link to='/midp_node_96'>Node Server</Link>
                     </li>
                     <li className='menu-item'>
-                      <Link to='/supabase_xx'>Node Server Context</Link>
+                      <Link to='/midp_node_context_96'>Node Server Context</Link>
                     </li>
                   </ul>
                 </div>
