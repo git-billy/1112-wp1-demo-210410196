@@ -32,7 +32,7 @@ const NavbarResp_xx = () => {
                       <Link to='/midp_static_96'>Static</Link>
                     </li>
                     <li className='menu-item'>
-                      <Link to='/local_xx'>Node Server</Link>
+                      <Link to='/midp_node_96'>Node Server</Link>
                     </li>
                     <li className='menu-item'>
                       <Link to='/supabase_xx'>Node Server Context</Link>

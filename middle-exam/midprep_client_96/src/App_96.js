@@ -7,6 +7,7 @@ import BlogsLocalJsonPage_xx from './pages/BlogsLocalJsonPage_xx';
 import BlogsNodeServerPage_xx from './pages/BlogsNodeServerPage_xx';
 import BlogsSupabasePage_xx from './pages/BlogsSupabasePage_xx';
 import ProductsStaticPage_96 from './pages/midprep_96/ProductsStaticPage_96';
+import ProductsNodeServerPage_96 from './pages/midprep_96/ProductsNodeServerPage_96';
 
 
 
@@ -22,6 +23,7 @@ function App_xx() {
         <Route path='/node_xx' element={<BlogsNodeServerPage_xx />} />
         <Route path='/supabase_xx' element={<BlogsSupabasePage_xx />} />
         <Route path='/midp_static_96' element={<ProductsStaticPage_96 />} />
+        <Route path='/midp_node_96' element={<ProductsNodeServerPage_96 />} />
       </Routes>
     </BrowserRouter>
   );
