@@ -27,3 +27,9 @@ e019e0e Billy   Fri Apr 14 09:17:08 2023 +0800  [middle-project]: Initialize
 # S3. 可以直接透過  Supabase API 取得React components 所要的json資料
 # S4. 請加入選單
 # S5. 請使用 Context API 及 useReducer 來儲存資料
+![](https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/middle-project/frontend-s1-s5.png)
+![](https://hzllwkixijuoqbropnat.supabase.co/storage/v1/object/public/demo-96/middle-project/frontend-result.png)
+
+```
+2532099 Billy   Fri Apr 14 10:41:07 2023 +0800  [middle-project]: frontend end
+```

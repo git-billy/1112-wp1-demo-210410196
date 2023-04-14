@@ -24,8 +24,20 @@ const NavbarResp_xx = () => {
                   Home
                 </Link>
               </li>
-              <li className="menu-item">
-                <Link to="/middle_project_96">MiddleProject_96</Link>
+              <li className="menu-item dropdown">
+                <Link to="#">MiddleProject_96 +</Link>
+                <div className="sub-menu-wrapper slideInUp">
+                  <ul className="sub-menu">
+                    <li className="menu-item">
+                      <Link to="/middle_project_server_96">Node Server</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midp_node_context_96">
+                        Supabase 
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="menu-item dropdown">
                 <Link to="#">Midprep_96 +</Link>

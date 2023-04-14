@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 
 import Wrapper from "../../assets/wrapper/midprep_96/Products_scss_96";
 
-import { useDemoContext_96 } from '../../context/DemoContext_96'
+// import { useDemoContext_96 } from '../../context/DemoContext_96'
+import { useServerContext_96 } from '../../context/ServerContext_96'
 
-const MiddleProjectSupabaseServerContextPage_96 = () => {
-  const { pName, pId, data1, data2 } = useDemoContext_96();
+const MiddleProjectNodeServerContextPage_96 = () => {
+  const { pName, pId, data1, data2 } = useServerContext_96();
   console.log(data1);
   return (
     <Wrapper>
@@ -61,4 +62,4 @@ const MiddleProjectSupabaseServerContextPage_96 = () => {
   );
 };
 
-export default MiddleProjectSupabaseServerContextPage_96;
+export default MiddleProjectNodeServerContextPage_96;
