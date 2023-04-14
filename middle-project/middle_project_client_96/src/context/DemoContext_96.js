@@ -8,7 +8,8 @@ import DemoReducer_96 from './DemoReducer_96';
 
 // let api_url = `http://localhost:5000/api/midprep_96/overview2_96`;
 
-let api_url = `http://localhost:5100/api/midprep_96/overview2_96`;
+// let api_url = `http://localhost:5100/api/midprep_96/overview2_96`;
+let api_url = `http://localhost:5001/api/middle_project/210410196`;
 
 const initialState = {
   pName: 'ChungChun Wang',
