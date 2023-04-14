@@ -24,6 +24,8 @@ const midprepRouter_xx = require('./routes/midprep_96');
 
 const apiMidprepRouter_96 = require('./routes/api/apiMidprepRouter_96');
 
+// const apiMiddleProject_96 = require('./routes/api/apiMiddleProject_96');
+
 var app = express();
 
 // view engine setup
@@ -46,11 +48,15 @@ app.use('/card2_xx', card2Router_xx);
 
 app.use('/api/card2_xx', card2ApiRouter_xx);
 
-const testDB = require('./utils/midprep_test_96');
+// const testDB = require('./utils/midprep_test_96');
+// console.log(testDB)
+
+const testDB = require('./utils/middle_project_test_96');
 console.log(testDB)
 
 app.use('/midprep_96', midprepRouter_xx);
 app.use('/api/midprep_96', apiMidprepRouter_96);
+// app.use('/api/middle_project', apiMiddleProject_96);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
